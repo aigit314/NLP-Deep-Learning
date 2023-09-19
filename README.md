@@ -24,7 +24,7 @@ I’ve fine-tuned pre-trained BERT on both GPU and TPU at google colab.
 **Steps of the solution:**
 1. Preprocessing of Data: Cleaned the text, Removed Tags, and converted the target variable to
  five numerical labels y:{0, 1, 2, 3, 4, 5}
-2. Calculated word count per sentence distribution (Fig.2) on training data (helped me to set max
+2. Calculated word count per sentence distribution on training data (helped me to set max
 input tokens/words=100)
 3. Calculated target (y) distributions in the training and development set.
 4. Created training, validation (development) and test datasets
