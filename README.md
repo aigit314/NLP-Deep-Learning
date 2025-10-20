@@ -19,7 +19,7 @@ role in any sentence and a pre-trained BERT model is avaiable that has been alre
 Sequential Sentence Classification task (with huge amount of data), I chose BERT as a Deep Learning
 algorithm to solve the problem.
 
-I’ve fine-tuned pre-trained BERT on both GPU and TPU at google colab.
+I’ve fine-tuned pre-trained BERT on GPU at google colab.
 
 **Steps of the solution:**
 1. Preprocessing of Data: Cleaned the text, Removed Tags, and converted the target variable to
@@ -35,7 +35,7 @@ into the input format that can be used by a BERT model.
 optimizer = Adam(learning_rate=3e-5, epsilon=1e-08)
 loss = SparseCategoricalCrossentropy(from_logits=True)
 metric= SparseCategoricalAccuracy('accuracy')
-9. Training model on training dataset (64,000 training samples while training on GPU and 300,000 training samples while training on TPU) and validate on validation dataset with multiple epochs and
+9. Training model on training dataset (64,000 training samples while training on GPU) and validate on validation dataset with multiple epochs and
 saving the weights of the Best model.
 10. Evaluate Model Performance (classification_report, confusion_matrix, accuracy_score) using
 the best saved model on Test Dataset.
